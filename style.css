@@ -1,0 +1,1095 @@
+/* ---------- FONT ----------*/
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan/Yekan.eot');
+    src: url('../fonts/Yekan/Yekan.eot?#iefix') format('embedded-opentype'), url('../fonts/Yekan/Yekan.woff') format('woff'), url('../fonts/Yekan/Yekan.woff2') format('woff2'),
+    url('../fonts/Yekan/Yekan.otf') format('opentype'),
+    url('../fonts/Yekan/Yekan.ttf') format('truetype'), url('../fonts/Yekan/Yekan.svg#Yekan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------- BORDER BOX ----------*/
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- FULL HEIGHT ----------*/
+.full-height {
+    height: 100%;
+}
+
+/* ---------- FULL WIDTH ----------*/
+.full-width {
+    width: 100%;
+}
+
+/* ---------- FLEX DISPLAY ----------*/
+.flex-display {
+    display: flex;
+}
+
+/* ---------- HTML ----------*/
+html {
+    font-family: "Yekan";
+    font-size: 1rem !important;
+    direction: rtl;
+    text-align: right;
+    position: relative;
+}
+
+
+/* ---------- BODY ----------*/
+body {
+    font-family: "Yekan";
+    direction: rtl;
+    text-align: right;
+    background-color: #fafafa;
+}
+
+
+/* ---------- LINKS ----------*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ---------- HEADER ----------*/
+header {
+    display: block;
+    height: 80px;
+    border : 0 solid #e2e8f0;
+}
+
+
+/* ---------- HEADER HOVER ----------*/
+header a:hover{
+    color: #FB815E;
+}
+
+
+/* ---------- HEADER CONTAINER ----------*/
+.header-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    direction: rtl;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+
+
+/* ---------- MAIN LOGO ----------*/
+.main-logo{
+    display: block;
+}
+
+
+/* ---------- DROPDOWN LIST DIV ----------*/
+.dropdowns{
+    width: 70%;
+    align-items: center;
+    justify-content: flex-start;
+    color: #3b4157;
+}
+
+
+/* ---------- DROPDOWN a TAGS ----------*/
+.dropdown-a{
+    margin-left: 2%;
+}
+
+
+.dropdown-a:hover .dropdown-content{
+    display: block;
+}
+
+
+/* ---------- DROPDOWN CONTENT ----------*/
+.dropdown-content{
+    position: absolute;
+    display: none;
+    width:40%;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgb(226, 232, 240);
+
+}
+
+/* ---------- LISTS ----------*/
+.lists{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.lists ul{
+    width: 40%;
+}
+
+.lists li{
+    font-size: 12px;
+    font-weight: 400;
+    color: #3b4157;
+    padding: 5px;
+    width: 100%;
+}
+
+.lists div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.lists p:hover{
+    border-bottom: 2px dashed #1780df;
+    color: #1780df;
+    cursor: pointer;
+}
+
+.lists img{
+    width: 40px;
+    height: 40px;
+    padding-left: 2px;
+}
+
+.lists button{
+    align-items: center;
+    border: 2px solid #FB815E;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #FB815E;
+    font-family: "Yekan";
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3%;
+}
+
+.lists button:hover{
+    background-color: #FB815E;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ---------- ENTER SECTION CONTENT ----------*/
+.enter-section{
+    width: 8%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    color: #1780df;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.enter-section a:hover{
+    color: #fa5a2c;
+}
+.enter-section a, a:visited{
+    align-items: center;
+    color: #1780df;
+}
+
+
+/* ---------- SEARCH SECTION ----------*/
+input[type="text"], button{
+    outline: none;
+}
+
+.search-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.outer-search-part{
+    padding-top: 1%;
+}
+
+.container-search{
+    padding: 3rem 1rem;
+    background-image: url("../asset/images/search-bg.png");
+    background-color: #1780df;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.search-out-holder{
+    height: 60px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    background-color: #fff;    
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.search-input-holder{
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #6e7794;
+    border-color: rgb(226, 232, 240);
+}
+
+.search-main-input{
+    font-family: "Yekan";
+    padding-right: 15px;
+    display: block;
+    border: 0 !important;
+    border-radius: 0 15px 15px 0 !important;
+    height: 60px;
+    width: 50%;
+    direction: rtl;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.search-city-input{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    width: 25%;
+    border: 0;
+}
+
+.search-city-input input{
+    font-family: "Yekan";
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.search-city-input svg {
+    color: #acadaf;
+    border-right: 1px solid #dee2e6 !important;
+    width: 20%;
+}
+
+.search-btn {
+    font-family: "Yekan";
+    background-color: #fb815e;
+    color: #fff;
+    border: solid 0 #fb815e;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-btn:hover {
+    background-color: #fa6439;
+    border-color: #fa5a2c;
+    cursor: pointer;
+}
+
+
+/* ---------- BEST SECTION ----------*/
+.best-part-holder{
+    border: 0 solid #e2e8f0;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.title-best{
+    border: 0 solid #e2e8f0;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700 !important;
+
+}
+
+.title-best h5{
+   color:  #3b4157;
+    font-size: 16px;
+    font-weight: 700 !important;
+}
+
+.title-best a{
+    color: #1780df;
+}
+
+.title-best a:hover{
+    color: #fa5a2c;
+}
+
+.pictures-best{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0 solid #e2e8f0;
+}
+
+.picture-item{
+    display: block;
+    border: 0 solid #e2e8f0;
+}
+
+.pic-card{
+    display: block;
+    border: 1px solid rgba(0,0,0,.125)!important;
+    border-radius: 10px;
+    height: 150px;
+    width: 125px;
+    background-color: #fff;
+    padding: .5rem!important;
+}
+
+.pic-card:hover {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.38);    
+}
+
+.pic-border{
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px!important;
+    padding-left: .5rem!important;
+    padding-right: .5rem!important;
+    border: 0 solid rgb(226, 232, 240);
+    text-align: center;
+    height: 85px;
+}
+
+.pic-title{
+    color: #3b4157;
+    font-size: 14px;
+    font-weight: 700 !important;
+    border: 0 solid #e2e8f0;
+    margin-top: 1.5rem!important;
+    margin-bottom: 0;
+}
+
+
+/* ---------- BACKGROUND OF PICS ----------*/
+#pic1{
+    background-color: #e8c9fd;
+}
+
+#pic2{
+    background-color: #fcbaba;
+}
+
+#pic3{
+    background-color: #b3e8ca;
+}
+
+#pic4{
+    background-color: #abc2d8;
+}
+
+#pic5{
+    background-color: #fbcbee;
+}
+
+#pic6{
+    background-color: #c5e1fb;
+}
+
+#pic7{
+    background-color: #fdcdb0;
+}
+
+
+/* ---------- COMMENT SECTION ----------*/
+.comment-out-container{
+    display: block;
+    background-color: #fff !important;
+    border: 0 solid rgb(226, 232, 240);
+    margin: 0;
+}
+
+.comment-in-container{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    padding-right: 5%!important;
+    padding-left: 5%!important;
+}
+
+.comment-container{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+
+.comment-divs{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+.comment-text{
+    display: block;
+    flex-basis: 50%;
+    border: 0 solid rgb(226, 232, 240);
+    margin-top: 48px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.comment-text h4{
+    color: #3b4157;
+    font-size: 20px;
+    font-weight: 700!important;
+    text-align: right;
+    margin-bottom: 8px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.comment-text p{
+    color: #6e7794;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    width: 75%;
+    padding-left: 48px;
+}
+
+.comment-box-wrapper {
+    position: relative;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.comment-box-wrapper img {
+    position: absolute;
+    top: -5.7%;
+    right: 7%;
+    width: 50px;
+    height: auto;
+}
+
+.comment-detail-wrapper {
+    border: 1px solid #1780df;
+    background-color: #e5f2fe;
+    border-radius: 20px;
+    height: 370px;
+}
+
+.comment-slider-wrapper p {
+    padding: 3rem 1.5rem;
+    color: #3b4157;
+    margin: auto;
+    width: 90%;
+}
+
+.comment-footer {
+    position: absolute;
+    bottom: 20px;
+    border-top: 2px dashed #6e7794;
+    padding-top: 1rem
+}
+
+.comment-footer-name {
+    padding: 0 10px;
+}
+
+.comment-footer-avatar img {
+    width: 20%;
+    height: 80%;
+    position: unset;
+    border-radius: 50%;
+}
+
+.comment-footer-btn {
+    align-items: center;
+}
+
+.comment-footer-btn a {
+    background-color: #fb815e;
+    border: #fb815e;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+}
+
+.comment-footer-btn a:hover{
+    background-color: #fa6439;
+    border: #fa5a2c;
+}
+
+.comment-footer-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.comment-box-wrapper::after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 0;
+    border-right: 1px solid #1780df;
+    border-bottom: 1px solid #1780df;
+    border-left: 0;
+    bottom: -14.9px;
+    left: 100px;
+    content: "";
+    transform: rotate(45deg);
+    background: #e5f2fe;
+    z-index: 1;
+}
+
+.comment-name {
+    position: absolute;
+    bottom: -3.5rem;
+    left: 5.3rem
+}
+
+/* ---------- COVID SECTION ----------*/
+.covid-out{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: #1780df;   
+}
+
+.covid-in{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    border: 0 solid rgb(226, 232, 240);
+}
+
+.covid-in h5{
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    direction: rtl;
+    width: 100%;
+    margin-top: 48px;    
+}
+
+.covid-content{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    max-width: 33.33%;
+    padding-left: 48px;
+    padding-right: 15px;
+    height: 80%;
+    box-sizing: border-box;
+    flex-basis: 33.3333%;
+    margin-bottom: 0;
+}
+
+.covid-content a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.covid-content a h4{
+    border: 0 solid rgb(226, 232, 240);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.covid-content a p{
+    border: 0 solid rgb(226, 232, 240);
+    color: #fff;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.covid-btn{
+    font-family: "Yekan";
+    background-color: #fb815e;
+    border: 1px solid #fb815e;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.covid-btn:hover{
+    background-color: #fa5a2c;
+}
+
+.covid-img{
+    vertical-align: middle;
+}
+
+/* ---------- DOWNLOAD APP SECTION ----------*/
+.fifth-out{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    margin-bottom: 10%;
+}
+
+.fifth-in{
+    border: 0 solid rgb(226, 232, 240);
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+
+.dlapp-container{
+    border: 0 solid rgb(226, 232, 240);
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#graphic-part{
+    border: 0 solid rgb(226, 232, 240);
+    margin-top: 15%;
+    display: block;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    width: 50%;
+}
+
+.app-img img{
+    border: 0 solid rgb(226, 232, 240);
+    border-radius: 20px;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.apps-div{
+    max-width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    justify-content: center;
+}
+
+.apps-div img{
+    border: 0 solid rgb(226, 232, 240);
+    width: 27px;
+    height: 31px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#form-part h5{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3b4157;
+    margin-bottom: 8px;
+    padding-bottom: 16px;
+}
+
+.form-part-p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6e7794;
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.app-get-form{
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.app-get-form input {
+    font-family: "Yekan";
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    padding: 2%;
+    font-size: 1rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    border-radius: 10px;
+}
+
+.app-get-btn {
+    font-family: "Yekan";
+    cursor: pointer;
+    background-color: #fb815e;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    min-width: 150px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.app-get-btn::before {
+    content: "";
+    background-color: #fc9c81 !important;
+    width: 60px;
+    border-radius: 10px !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.app-get-btn:hover::before {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.feather-smartphone {
+    vertical-align: middle;
+    position: relative;
+    left: 30px;
+}
+
+/* ---------- FOOTER SECTION ----------*/
+.footer-out{
+    border: 0 solid rgb(226, 232, 240);
+    display: block;
+}
+
+.footer-in {
+    background-color: #1780df;
+    display: block;
+}
+
+.footer-title-out{
+    border: 0 solid rgb(226, 232, 240);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.footer-title-out p{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 8px 24px 24px;
+    width: 100%;
+    max-width: 41.66%;
+}
+
+.footer-title-in{
+    border: 0 solid rgb(226, 232, 240);
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.footer-lists-out{
+    border: 0 solid rgb(226, 232, 240);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-list-holder{
+    border: 0 solid rgb(226, 232, 240);
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 16.66%;
+}
+
+ul{
+    border: 0 solid rgb(226, 232, 240);
+    list-style-type: none;
+    padding: 0;
+}
+
+#list1 li, #list3 li{
+    border-top: 1px solid #fff;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#list1 li:hover, #list3 li:hover{
+    background-color: #fff;
+    color: #1780df;
+}
+
+#list1 a, #list3 a{
+    padding: 10px 10px 10px 10px;
+}
+
+.footer-list-holder-middle{
+    border: 0 solid rgb(226, 232, 240);
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 66.66%;
+    text-align: center;
+
+}
+
+#list2{
+    border: 0 solid rgb(226, 232, 240);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+
+#list2 a{
+    padding: 10px;
+    border: 0 solid rgb(226, 232, 240);
+}
+
+#list2 i{
+    border: 0 solid rgb(226, 232, 240);
+    color: #fff;
+    padding: 4px;
+    font-size: 40px;
+}
+
+.footer-line{
+    background-color: #fff;
+    width: 1px;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.footer-last-out{
+    border: 0 solid rgb(226, 232, 240);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-last-in{
+    display: block;
+    border: 0 solid rgb(226, 232, 240);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.footer-last-in p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 35%;
+    border: 0 solid rgb(226, 232, 240);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer-inputs{
+    border: 0 solid rgb(226, 232, 240);
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-inputs-holder{
+    border: 0 solid rgb(226, 232, 240);
+    display: block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#name-family{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name-family input, .footer-inputs-holder input{
+    font-family: "Yekan";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    width: 49%;
+    color: #495057;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 5px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 12px 6px 12px 6px;
+}
+
+.footer-inputs-holder input{
+    width: 99%;
+    margin-bottom: 2px;
+}
+
+.footer-image-holder{
+    margin-right: 35%;
+    margin-left: 35%;
+    padding: 2%;
+    margin-bottom: 1%;
+    justify-content: space-evenly;
+    border: 0 solid rgb(226, 232, 240);
+}
+
+.footer-image-holder img{
+    padding-top: 2%;
+    padding-right: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ---------- END OF PAGE ----------*/
+.end-of-page{
+    border: 0 solid rgb(226, 232, 240);
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.end-of-page span{
+    color: #3b4157;
+    border: 0 solid rgb(226, 232, 240);
+    font-size: 15px;
+    font-weight: 15px;
+}
+
+.end-of-page i{
+    color: #fa5a2c;
+}
+
+
+/* ---------- LOGIN PAGE ----------*/
+/* ---------- FORM ----------*/
+.form-split{
+    border: 0 solid rgb(226, 232, 240);
+    height: 100vh;
+    margin: 0px!important;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#pic-part{
+    border: 0 solid rgb(226, 232, 240);
+    position:sticky;
+    width: 35%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1780df;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#login-inputs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    min-width: 65%;
+    min-height: 100vh;
+    padding: 15%;
+}
+
+.approve-btn{
+    border: 0 solid #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 4%;
+    color: #fff;
+    font-family: 'Yekan';
+    background-color: rgb(251, 129, 94);
+    cursor: pointer;
+}
+
+.code-btn{
+    width: 30%;
+    color: rgb(251, 129, 94);
+    font-family: "Yekan";
+    border: 2px solid rgb(251, 129, 94);
+    border-radius: 10px;
+    padding: 5%;
+    background-color: #fafafa;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+
+.code-btn:hover{
+    background-color: rgb(251, 129, 94);
+    color: #fff;
+    cursor: pointer;
+}
