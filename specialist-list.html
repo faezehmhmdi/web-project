@@ -28,7 +28,7 @@
         <!-- bootstrap -->
     </head>
     
-    <body>
+    <body style="overflow-x: hidden">
         <!-- header -->
            <header class="header full-width">
             <div class="header-container full-height flex-display">
@@ -270,11 +270,68 @@
             
             <div class="row w-100 full-width flex-display" id="main-content">
                 <div class="col-md-3" id="main-content-sidebar">
-                    <div class="card w-100 flex-display" style="padding: 0; border: 0 solid;">
-                        <div>
-                            <img style="width: 100%;" src="./asset/images/side.png">
+                    <div class="card w-100 flex-display" style="padding: 0; border: 0 solid; background-color: #fafafa;">
+                        <div class="row w-100" style="margin-bottom: 5%;">
+                            <img style=" width: 100%;" src="./asset/images/side.png">
+
                         </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <h5 style=" padding-top: 2%; padding-bottom: 2%; margin-bottom: 2%; border-bottom: 1px solid #6e7794;">جستجو در نتایج</h5>
+                            <input type="text" placeholder="نام یا نام خانوادگی پزشک را بنویسید." style="border: none; outline: none; background-color: #fafafa; margin-top: 2%; margin-bottom: 2%; padding: 5%; border-radius: 5px;">
+                        </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <h5 data-toggle="collapse" href="#takhasos" role="button" aria-expanded="false" aria-controls="thakhasos">تخصص</h5>
+                            <div class="collapse w-100" id="takhasos">
+                                <ul>
+                                    <li>متخصص داخلی</li>
+                                    <li>فوق تخصص گوارش، کبد و آندوسکوپی</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <h5 data-toggle="collapse" href="#nobat" role="button" aria-expanded="false" aria-controls="nobat">زمان نوبت</h5>
+                            <div class="collapse w-100" id="nobat">
+                                <ul>
+                                    <li>امروز</li>
+                                    <li>فردا</li>
+                                    <li>سریع ترین زمان</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <h5 data-toggle="collapse" href="#bimarestan" role="button" aria-expanded="false" aria-controls="bimarestan">بیمارستان</h5>
+                            <div class="collapse w-100" id="bimarestan" style=" max-height: 100px; overflow-y: auto;">
+                                <ul>
+                                    <li>خیریه سید الشهداء</li>
+                                    <li>بقیه الله</li>
+                                    <li>آپادانا</li>
+                                    <li>قمر بنی هاشم</li>
+                                    <li>بعثت</li>
+                                    <li>نیکان</li>
+                                    <li>ساسان</li>
+                                    <li>ارتش</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <h5 data-toggle="collapse" href="#jensiat" role="button" aria-expanded="false" aria-controls="jensiat">جنسیت</h5>
+                            <div class="collapse w-100" id="jensiat">
+                                <ul>
+                                    <li>مرد</li>
+                                    <li>زن</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row w-100 flex-display" style="padding: 2%; margin-bottom: 5%; border: 1px solid #6e7794; background-color: #fff; border-radius: 10px;">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                <label class="form-check-label" for="flexSwitchCheckDefault">نمایش پزشکان با مشاوره آنلاین</label>
+                            </div>
+
+                        </div>
+                        
                     </div>
+                    
                     
                 </div>
                 <div class="col-md-9" id="main-content-stuff">
