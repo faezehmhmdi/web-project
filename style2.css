@@ -1,4 +1,5 @@
 
+/* Picture part of medical-specialties*/
 .picture-part{
     border: 0 solid #fff;
     padding-left: 7%;
@@ -13,6 +14,7 @@
     color: #FB815E;
 }
 
+/* Footer inside part*/
 .footer-inside{
     border: 0 solid;
     background-color: #1780df;
@@ -20,6 +22,7 @@
     padding: 1%;
 }
 
+/* Footer class */
 .footer{
     justify-content: space-between;
     flex-direction: row;
@@ -27,6 +30,7 @@
     padding-right: 5%;
 }
 
+/* right part of footer*/
 .footer-right{
     justify-content: flex-start;
     align-items: flex-start;
@@ -34,17 +38,20 @@
     padding: 1%;
 }
 
+/* middle part of footer*/
 .footer-middle{
     justify-content: space-around;
     align-items: center;
 }
 
+/* left part of footer*/
 .footer-left{
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+/* images in footer*/
 #images-footer{
     display: flex;
     width: 100%;
@@ -52,6 +59,7 @@
     align-items: center;
 }
 
+/* social media items in footer*/
 #social-items{
     display: flex;
     width: 100%;
@@ -65,6 +73,7 @@
     margin: 5%;
 }
 
+/* Center part of medical specialties part*/
 .center-of-page{
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +86,7 @@
 }
 
 
+/* each specialty part */
 .sp-item{
     flex-direction: column;
     flex-wrap: wrap;
@@ -97,12 +107,14 @@
     cursor: pointer;
 }
 
+/* title of specialty */
 .pic-title {
     width: 100%;
     margin-bottom: 10%;
     font-size: 16px;
 }
 
+/* description of specialty */
 .desc{
     color: #6e7794;
     padding-right: 2%;
@@ -110,6 +122,7 @@
     font-size: 14px;
 }
 
+/* 3 doctors images*/
 .btn-dr-img{
     display: flex;
     
@@ -119,12 +132,14 @@
     width: 50%;
     overflow-wrap: break-word;
 }
+
 .dr-img img{
     width: 30px;
     vertical-align: middle;
     border-radius: 50%;
 }
 
+/* div for button for see more */
 .btn-dr-img{
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +148,7 @@
     align-items: flex-start;
     margin: 2%;
 }
+
 .btn-dr-img button{
     align-items: center;
     border: 2px solid #FB815E;
@@ -151,6 +167,8 @@
     cursor: pointer;
 }
 
+
+/* sticky side of the page*/
 .card{
     position: sticky !important;
     border: 1px solid #6e7794;
@@ -192,6 +210,7 @@
     cursor: pointer;
 }
 
+/* alphabet of list*/
 .alphabet {
     margin-bottom: 1%;
     margin-top: 1%;
@@ -203,6 +222,7 @@
     background-color: #e5f2fe;
 }
 
+/* nav of specialties list page*/
 .nav-container{
     flex-wrap: wrap;
     border: 0 solid;
@@ -219,6 +239,7 @@
     padding-top: 24px;
 }
 
+/* blue title of page*/
 .blue-back{
     background-color: #1780df;
     padding: 16px;
@@ -256,6 +277,7 @@
     padding: 4px;
 }
 
+/* div for each doctor */
 .each-doc{
     flex-wrap: wrap;
     width: 95%;
@@ -317,6 +339,7 @@
    fill: #fb815e;
 }
 
+/* read more part */
 .read-more{
     margin: 8%;
     background-color: #e5f2fe; 
@@ -324,6 +347,7 @@
     padding: 3%;
 }
 
+/* question part*/
 .QA{
     border: 1px solid #3b4157;
     border-radius: 10px;
