@@ -6,16 +6,19 @@
         
         <!-- title of the page -->
         <title>
-            نوبت دهی آنلاین مطب آقای دکتر یاسر تقوی-فوق تخصص گوارش، کبد و آندوسکوپی  در  تهران
+            نوبت دهی آنلاین مطب آقای دکتر جواد رستگارمقدم-فوق تخصص گوارش، کبد و آندوسکوپی  در  تهران
         </title>
         
         <!-- icon of the page -->
         <link rel="icon" type="image/x-icon" href="./asset/images/favicon.ico">
         
         <!-- link of css file -->
-       <link rel="stylesheet" type="text/css" href="./css/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/style2.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
         
@@ -25,7 +28,7 @@
         <!-- bootstrap -->
     </head>
     
-    <body>
+    <body style="overflow-x: hidden;">
         <!-- header -->
            <header class="header full-width">
             <div class="header-container full-height flex-display">
@@ -238,6 +241,8 @@
             </div>
             </div> 
         </header>
+        
+        <!--Navbar -->
         <div class="container full-width">
             <div class="row flex-display full-width nav-container">
                 <nav>
@@ -250,19 +255,173 @@
                         </li>
                         <li>
                             <a href="./specialist-list.html" style="color: #1780df;">
-                                متخصص داخلی
+                                فوق تخصص گوارش، کبد و آندوسکوپی
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
                             </a>
                         </li>
                         <li>
                             <span>
-                                آقای دکتر یاسر تقوی
+                                آقای دکتر جواد رستگار مقدم
                             </span>
                         </li>
                     </ol>
                 </nav>
             </div>
         </div>
+        
+        <div class="row w-100 full-width flex-display" id="main-content">
+            <div class="col-md-3" id="main-content-sidebar">
+                
+            </div>
+            <div class="col-md-9" id="main-content-stuff" style=" padding-left: 5%; padding-right: 5%;">
+                <div class="row w-100 doc-part flex-display">
+                    <div class="row" style="padding: 1%; margin:0; border-bottom: 1px solid rgb(226, 232, 240);">
+                        <button type="button" style="width: 20%; height: 50px; border: none; border-radius: 10px; color: #fff; background-color: #1780df; font-weight: 700; outline: none;">مطب خیابان پاسداران
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+                    </div>
+                    <div class="row full-width flex-display" style="align-items: center; margin:0;">
+                        <div class="flex-display" style="width:10%; justify-content: flex-start;">
+                            <button type="button" style="background-color: #fff; padding: 5px; border-radius: 50%; border: 1px solid rgb(251, 129, 94);">
+                            <svg style="fill: rgb(251, 129, 94);"class="icon icon-arrowRight" viewBox="0 0 24 24" width="24px" height="24px"><title>Arrow Right</title><path d="M0 0h24v24H0z" fill="none"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                            </button>
+                        </div>
+                        
+                        <div class="days flex-display">
+                            <div class="each-day">
+                                <p>امروز</p>
+                                <p>28</p>
+                                <p>آذر</p>
+                            </div>
+                            <div class="each-day day-closed">
+                                <p>شنبه</p>
+                                <p>29</p>
+                                <p>دی</p>
+                            </div>
+                            <div class="each-day day-closed">
+                                <p>یکشنبه</p>
+                                <p>30</p>
+                                <p>دی</p>
+                            </div>
+                            <div class="each-day visit-day">
+                                <p>دوشنبه</p>
+                                <p>1</p>
+                                <p>دی</p>
+                            </div>
+                            <div class="each-day day-closed">
+                                <p>سه شنبه</p>
+                                <p>2</p>
+                                <p>دی</p>
+                            </div>
+                            <div class="each-day">
+                                <p>چهارشنبه</p>
+                                <p>3</p>
+                                <p>دی</p>
+                            </div>
+                        </div>
+                        <div class="flex-display" style="width:10%; justify-content: flex-end;">
+                            <button type="button" style="background-color: #fff; padding: 5px; border-radius: 50%; border: 1px solid rgb(251, 129, 94);">
+                            <svg style="fill: rgb(251, 129, 94);" class="icon icon-arrowLeft" viewBox="0 0 24 24" width="24px" height="24px"><title>Arrow Left</title><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row flex-display" style="width: 96%; margin-left: 2%; margin-right: 2%; margin-bottom: 1%; border: 1px solid rgb(226, 232, 240); border-radius: 5px; padding: 1%;">
+                        <p style="color: #6e7794;">
+                                <svg data-v-969e2d1a="" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-steel feather feather-clock"><circle data-v-969e2d1a="" cx="12" cy="12" r="10"></circle><polyline data-v-969e2d1a="" points="12 6 12 12 16 14"></polyline></svg>
+                                ساعت های نوبت دوشنبه 1 دی
+                        </p>
+                        <div class="row">
+                            <div class="col hours"><button class="covid-btn closed-hour">17:00</button></div>
+                            <div class="col hours"><button class="covid-btn closed-hour">17:10</button></div>
+                            <div class="col hours"><button class="covid-btn closed-hour">17:20</button></div>
+                            <div class="col hours"><button class="covid-btn closed-hour">17:30</button></div>
+                            <div class="col hours"><button class="covid-btn">17:40</button></div>
+                            <div class="col hours"><button class="covid-btn">17:50</button></div>
+                            <div class="col hours"><button class="covid-btn">18:00</button></div>
+                            <div class="col hours"><button class="covid-btn">18:10</button></div>
+                            <div class="col hours"><button class="covid-btn">18:20</button></div>
+                            <div class="col hours"><button class="covid-btn closed-hour">18:30</button></div>
+                            <div class="col hours"><button class="covid-btn">18:40</button></div>
+                            <div class="col hours"><button class="covid-btn">18:50</button></div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100 doc-part flex-display">
+                    <div class="score-box">
+                        <div>4.5</div>
+                        <div>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div>از 35 نظر</div>
+                    </div>
+                </div>
+                <div class="row w-100 doc-part flex-display">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+                                اطلاعات مطب
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            روزهای حضور
+                        </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row full-width" style="margin-bottom: 1%;">
+                                <a class="col-4">
+                                    <img style="width: 100%; border: 0 solid; border-radius: 10px;" src="./asset/images/addr1.png">
+                                </a>
+                                <div class="col-8" style="color:#3b4157;">
+                                    <h5 style="font-size: 16px; font-weight: 700;">آدرس مطب 1 :</h5>
+                                    <p>
+                                        خیابان پاسداران، ابتدای بوستان نهم، ساختمان مهر، پلاک 133، طبقه 1، واحد3
+                                    </p>
+                                    <span class="flex-display">
+                                        <p style="font-weight: 700;">
+                                            تلفن گویا : 
+                                            <span class="phone">02162743344</span>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row full-width" style="margin-bottom: 1%;">
+                                <a class="col-4">
+                                    <img style="width: 100%; border: 0 solid; border-radius: 10px;" src="./asset/images/addr2.png">
+                                </a>
+                                <div class="col-8" style="color:#3b4157;">
+                                    <h5 style="font-size: 16px; font-weight: 700;">آدرس مطب 2 :</h5>
+                                    <p>
+                                        خیابان پاسداران، ابتدای بوستان نهم، ساختمان مهر، پلاک 133، طبقه 1، واحد3
+                                    </p>
+                                    <span class="flex-display">
+                                        <p style="font-weight: 700;">
+                                            تلفن گویا : 
+                                            <span class="phone">02162743344</span>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    </div>
+                </div>
+                <div class="row w-100 flex-display"></div>
+                <div class="row w-100 flex-display"></div>
+            </div>
+
+            
+        </div>
+        
+        <!-- Covid part -->
         <section class="fourth-section">
             <div class="covid-out full-width">
                 <div class="covid-in">
@@ -353,6 +512,8 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Footer part -->
         <div class="footer-out full-width">
             <div class="footer-inside full-width">
                 <footer class="footer full-width flex-display">
