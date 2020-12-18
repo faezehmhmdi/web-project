@@ -202,3 +202,140 @@
     border-radius: 5px;
     background-color: #e5f2fe;
 }
+
+.nav-container{
+    flex-wrap: wrap;
+    border: 0 solid;
+    color: #6e7794;
+}
+
+.nav-container ol{
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    min-width: 600px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.blue-back{
+    background-color: #1780df;
+    padding: 16px;
+    border: 0 solid #1780df;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+#main-content{
+    margin-top: 2%;
+}
+
+#main-content-sidebar{
+    margin-top: 1.2%;
+}
+
+#nav-card{
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+#nav-card ul{
+    text-align: right;
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+#nav-card li{
+    color: #6e7794;
+    border: 0 solid;
+    padding: 4px;
+}
+
+.each-doc{
+    flex-wrap: wrap;
+    width: 95%;
+    border: 1px solid #6e7794;
+    padding: 8px;
+    margin-left: 10%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.each-doc:hover{
+    border: 1px solid #FB815E;
+    cursor: pointer;
+}
+
+.doc-title h5{
+    color: #3b4157;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+.doc-title h6{
+    color: #3b4157;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.doc-title p{
+    color: #3b4157;
+}
+
+.doc-details{
+    color: #6e7794;
+    border: 0 solid #e5f2fe;
+    background-color: #e5f2fe;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+.doc-details li{
+    padding: 1%;
+}
+
+.like-span{
+    border: 1px solid #ededed;
+    background-color: #fafafa;
+    color: #1780df;
+    padding: 4%;
+    border-radius: 10px;
+}
+
+.like-span svg:hover{
+   color: #fb815e;
+   fill: #fb815e;
+}
+
+.read-more{
+    margin: 8%;
+    background-color: #e5f2fe; 
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.QA{
+    border: 1px solid #3b4157;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 3%;
+    background-color: #fff;
+}
+
+.QA a{
+    color: #3b4157;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid #6e7794;
+}
