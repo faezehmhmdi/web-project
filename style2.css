@@ -428,3 +428,18 @@
     cursor: pointer;
     color: #fa5a2c;
 }
+
+.cover svg:hover{
+    fill: #fa5a2c;
+    cursor: pointer;
+}
+
+/* score box part*/
+.score-box{
+    width: 15%;
+    border-radius: 10px;
+    background-color: #e5f2fe;
+    padding: 2%;
+    color: #1780df;
+    text-align: center;
+}
