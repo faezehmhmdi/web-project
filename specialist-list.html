@@ -20,7 +20,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+        <script src="./javascript/script.js" defer></script>
         
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -233,7 +233,7 @@
             </div>
             <div class="enter-section flex-display">
                 <div>
-                    <a href="./login.html">
+                    <a id="login-link">
                          ورود
                         <i class="fa fa-sign-in-alt"></i>
                     </a>
@@ -342,313 +342,27 @@
                 <div class="col-md-9" id="main-content-stuff">
                     
                     <!-- List order -->
-                    <div class="card w-100 flex-display" id="nav-card">
-                        <ul class="flex-display full-width">
+                    <div class="card nav w-100 flex-display" id="nav-card">
+                        <ul class="nav nav-pills flex-display full-width">
                             <li style="color: #3b4157; font-weight: 700;">
                                 <svg data-v-027aed6c="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 feather feather-sliders"><line data-v-027aed6c="" x1="4" y1="21" x2="4" y2="14"></line><line data-v-027aed6c="" x1="4" y1="10" x2="4" y2="3"></line><line data-v-027aed6c="" x1="12" y1="21" x2="12" y2="12"></line><line data-v-027aed6c="" x1="12" y1="8" x2="12" y2="3"></line><line data-v-027aed6c="" x1="20" y1="21" x2="20" y2="16"></line><line data-v-027aed6c="" x1="20" y1="12" x2="20" y2="3"></line><line data-v-027aed6c="" x1="1" y1="14" x2="7" y2="14"></line><line data-v-027aed6c="" x1="9" y1="8" x2="15" y2="8"></line><line data-v-027aed6c="" x1="17" y1="16" x2="23" y2="16"></line></svg>
                                 مرتب سازی بر اساس :
                             </li>
                             <li class="card-item">
-                                <span>منتخب</span>
+                                <a class="nav-link" id="sort-best">منتخب</a>
                                 
                             </li>
                             <li class="card-item">
-                                <span> بیشترین رضایتمندی</span>
+                                <a class="nav-link" id="sort-userpercent"> بیشترین رضایتمندی</a>
                                
                             </li>
                             <li class="card-item">
-                                <span> زودترین نوبت</span>
+                                <a class="nav-link" id="sort-firstdate"> زودترین نوبت</a>
                             </li>
                         </ul>
                     </div>
-                    
-                    <!-- First Doctor -->
-                    <div class="row w-100 each-doc flex-display">
-                        <a href="./doctor.html" class="row col-11 flex-display" style="flex-direction: column; max-width: 58.33%; flex-basis: 58.33%; padding: 8px;">
-                            <div class="col-3" style="padding-left: 16px; max-width: 25%; flex-basis: 25%;">
-                                <img style="width: 75px; height: 75px; border-radius: 50%;" src="./asset/images/dr4.jpg">
-                            </div>
-                            <div class="col-9 doc-title" style="max-width: 75%; flex-basis: 75%;">
-                                <h5>
-                                    جواد رستگارمقدم
-                                </h5>
-                                <h6>
-                                    فوق تخصص گوارش، کبد و آندوسکوپی
-                                </h6>
-                                <div style="margin-bottom: 5%; margin-top: 2%;">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span style="color: #6e7794; font-size: 10px;">35 نظر</span>
-                                </div>
-                                <p>
-                                    “ تشخیص صحیح آقای دکتر “
-                                </p>
-                            </div>
-                        </a>
-                        <div class="col-12 flex-display full-width" style="flex-direction: column; flex-basis: 41.66%;">
-                            <a>
-                                <div class="doc-details">
-                                    <ul>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin" data-v-50fd7d5a=""><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" data-v-50fd7d5a=""></path><circle cx="12" cy="10" r="3" data-v-50fd7d5a=""></circle></svg>
-                                            <span>
-                                                تهران | پاسداران
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book" data-v-50fd7d5a=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-50fd7d5a=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                تجربه کاری 39 سال
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up" data-v-50fd7d5a=""><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                90 درصد رضایت کاربران
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                            <div style="margin-top: 2%;">
-                                <div class="flex-display" style="justify-content: space-between; align-items: center;">
-                                    <button class="app-get-btn" style="display: flex; align-items: center; width: 75%;">
-                                            <div style="position: inherit; display: inline; padding: 2%;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white " data-v-bc20ae4e=""><line x1="19" y1="12" x2="5" y2="12" data-v-bc20ae4e=""></line><polyline points="12 19 5 12 12 5" data-v-bc20ae4e=""></polyline></svg>
-                                            </div>
-                                            <div style="position: inherit; display: inline; margin-right: 35%;">
-                                                نوبت بگیر!
-                                            </div>
-                                    </button>
-                                    <span class="like-span">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-blue" data-v-50fd7d5a=""><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" data-v-50fd7d5a=""></path></svg>
-                                    </span>
-                                </div>
-                                <p style="color: #4dcc6b; text-align: center; margin-top: 2%; font-size: 14px;">
-                                    اولین نوبت خالی دوشنبه 1 دی
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 2nd Doctor -->
-                    <div class="row w-100 each-doc flex-display">
-                        <a class="row col-11 flex-display" style=" max-width: 58.33%; flex-basis: 58.33%; padding: 8px;">
-                            <div class="col-3" style="padding-left: 16px; max-width: 25%; flex-basis: 25%;">
-                                <img style="width: 75px; height: 75px; border-radius: 50%;" src="./asset/images/dr_man.png">
-                            </div>
-                            <div class="col-9 doc-title" style="max-width: 75%; flex-basis: 75%;">
-                                <h5>
-                                    یاسر تقوی
-                                </h5>
-                                <h6>
-                                    فوق تخصص گوارش، کبد و آندوسکوپی
-                                </h6>
-                                <div style="margin-bottom: 5%; margin-top: 2%;">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span style="color: #6e7794; font-size: 10px;">3 نظر</span>
-                                </div>
-                                <p>
-                                    “ سلام ، از آقای دکتر تشکر میکنم الان 24 ساعت از ویزیت بنده گذشته با نسخه ایشون حالم خیلی بهتره  ، فقط اگه درخصوص بیماری ب بیمار ... “
-                                </p>
-                            </div>
-                        </a>
-                        <div class="col-12 flex-display full-width" style="flex-direction: column; flex-basis: 41.66%;">
-                            <a>
-                                <div class="doc-details">
-                                    <ul>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin" data-v-50fd7d5a=""><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" data-v-50fd7d5a=""></path><circle cx="12" cy="10" r="3" data-v-50fd7d5a=""></circle></svg>
-                                            <span>
-                                                تهران | پیروزی
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book" data-v-50fd7d5a=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-50fd7d5a=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                تجربه کاری 9 سال
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up" data-v-50fd7d5a=""><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                86 درصد رضایت کاربران
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                            <div style="margin-top: 2%;">
-                                <div class="flex-display" style="justify-content: space-between; align-items: center;">
-                                    <button class="app-get-btn" style="display: flex; align-items: center; width: 75%;">
-                                            <div style="position: inherit; display: inline; padding: 2%;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white " data-v-bc20ae4e=""><line x1="19" y1="12" x2="5" y2="12" data-v-bc20ae4e=""></line><polyline points="12 19 5 12 12 5" data-v-bc20ae4e=""></polyline></svg>
-                                            </div>
-                                            <div style="position: inherit; display: inline; margin-right: 35%;">
-                                                نوبت بگیر!
-                                            </div>
-                                    </button>
-                                    <span class="like-span">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-blue" data-v-50fd7d5a=""><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" data-v-50fd7d5a=""></path></svg>
-                                    </span>
-                                </div>
-                                <p style="color: #4dcc6b; text-align: center; margin-top: 2%; font-size: 14px;">
-                                    اولین نوبت خالی دوشنبه 1 دی
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 3rd Doctor -->
-                    <div class="row w-100 each-doc flex-display">
-                        <a class="row col-11 flex-display" style=" max-width: 58.33%; flex-basis: 58.33%; padding: 8px;">
-                            <div class="col-3" style="padding-left: 16px; max-width: 25%; flex-basis: 25%;">
-                                <img style="width: 75px; height: 75px; border-radius: 50%;" src="./asset/images/dr5.jpg">
-                            </div>
-                            <div class="col-9 doc-title" style="max-width: 75%; flex-basis: 75%;">
-                                <h5>
-                                    سید محمد محسن مرتضوی
-                                </h5>
-                                <h6>
-                                    فوق تخصص گوارش، کبد و آندوسکوپی
-                                </h6>
-                                <div style="margin-bottom: 5%; margin-top: 2%;">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span style="color: #6e7794; font-size: 10px;">115 نظر</span>
-                                </div>
-                                <p>
-                                    “ تخصص، تعهد و انسانیت “
-                                </p>
-                            </div>
-                        </a>
-                        <div class="col-12 flex-display full-width" style="flex-direction: column; flex-basis: 41.66%;">
-                            <a>
-                                <div class="doc-details">
-                                    <ul>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin" data-v-50fd7d5a=""><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" data-v-50fd7d5a=""></path><circle cx="12" cy="10" r="3" data-v-50fd7d5a=""></circle></svg>
-                                            <span>
-                                                تهران | ابوسعید
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book" data-v-50fd7d5a=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-50fd7d5a=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                تجربه کاری 32 سال
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up" data-v-50fd7d5a=""><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                90 درصد رضایت کاربران
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                            <div style="margin-top: 2%;">
-                                <div class="flex-display" style="justify-content: space-between; align-items: center;">
-                                    <button class="app-get-btn" style="display: flex; align-items: center; width: 75%;">
-                                            <div style="position: inherit; display: inline; padding: 2%;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white " data-v-bc20ae4e=""><line x1="19" y1="12" x2="5" y2="12" data-v-bc20ae4e=""></line><polyline points="12 19 5 12 12 5" data-v-bc20ae4e=""></polyline></svg>
-                                            </div>
-                                            <div style="position: inherit; display: inline; margin-right: 35%;">
-                                                نوبت بگیر!
-                                            </div>
-                                    </button>
-                                    <span class="like-span">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-blue" data-v-50fd7d5a=""><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" data-v-50fd7d5a=""></path></svg>
-                                    </span>
-                                </div>
-                                <p style="color: #4dcc6b; text-align: center; margin-top: 2%; font-size: 14px;">
-                                    اولین نوبت خالی دوشنبه 1 دی
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 4th Doctor -->
-                    <div class="row w-100 each-doc flex-display">
-                        <a class="row col-11 flex-display" style=" max-width: 58.33%; flex-basis: 58.33%; padding: 8px;">
-                            <div class="col-3" style="padding-left: 16px; max-width: 25%; flex-basis: 25%;">
-                                <img style="width: 75px; height: 75px; border-radius: 50%;" src="./asset/images/dr6.jpg">
-                            </div>
-                            <div class="col-9 doc-title" style="max-width: 75%; flex-basis: 75%;">
-                                <h5>
-                                    سید علی مومن زاده
-                                </h5>
-                                <h6>
-                                    فوق تخصص گوارش، کبد و آندوسکوپی
-                                </h6>
-                                <div style="margin-bottom: 5%; margin-top: 2%;">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span style="color: #6e7794; font-size: 10px;">18 نظر</span>
-                                </div>
-                                <p>
-                                    “ دکتر باحوصله صبور و خیلی خوب “
-                                </p>
-                            </div>
-                        </a>
-                        <div class="col-12 flex-display full-width" style="flex-direction: column; flex-basis: 41.66%;">
-                            <a>
-                                <div class="doc-details">
-                                    <ul>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin" data-v-50fd7d5a=""><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" data-v-50fd7d5a=""></path><circle cx="12" cy="10" r="3" data-v-50fd7d5a=""></circle></svg>
-                                            <span>
-                                                تهران | تهرانپارس
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book" data-v-50fd7d5a=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-50fd7d5a=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                تجربه کاری 10 سال
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up" data-v-50fd7d5a=""><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" data-v-50fd7d5a=""></path></svg>
-                                            <span>
-                                                86 درصد رضایت کاربران
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                            <div style="margin-top: 2%;">
-                                <div class="flex-display" style="justify-content: space-between; align-items: center;">
-                                    <button class="app-get-btn" style="display: flex; align-items: center; width: 75%;">
-                                            <div style="position: inherit; display: inline; padding: 2%;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white " data-v-bc20ae4e=""><line x1="19" y1="12" x2="5" y2="12" data-v-bc20ae4e=""></line><polyline points="12 19 5 12 12 5" data-v-bc20ae4e=""></polyline></svg>
-                                            </div>
-                                            <div style="position: inherit; display: inline; margin-right: 35%;">
-                                                نوبت بگیر!
-                                            </div>
-                                    </button>
-                                    <span class="like-span">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-blue" data-v-50fd7d5a=""><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" data-v-50fd7d5a=""></path></svg>
-                                    </span>
-                                </div>
-                                <p style="color: #4dcc6b; text-align: center; margin-top: 2%; font-size: 14px;">
-                                    اولین نوبت خالی دوشنبه 1 دی
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="full-width" id="docs-stuff"></div>
+                    <!-- Docs in js -->
                     
                 </div>
             </div>
