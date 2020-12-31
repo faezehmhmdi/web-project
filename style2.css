@@ -73,6 +73,15 @@
     margin: 5%;
 }
 
+.animate-right {
+    position: relative;
+  animation: animateright 0.8s;
+}
+
+@keyframes animateright { 
+  from { right :-10px; opacity:0 } to { right:0; opacity:1 }
+}
+
 /* Center part of medical specialties part*/
 .center-of-page{
     display: flex;

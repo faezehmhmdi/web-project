@@ -239,7 +239,24 @@
         </header>
         <section>
             <div class="picture-part full-width full-height flex-display">
-                <img class="full-width"src="./asset/images/specialties.png">
+                <img class="full-width mySlide animate-right" src="./asset/images/specialties.png">
+                <img class="full-width mySlide animate-right" src="./asset/images/specialties2.png">
+                <script>
+                    var myindex = 0;
+                    changePic();
+                    function changePic(){
+                        let j = document.getElementsByClassName("mySlide");
+                        for(let i =0; i< j.length; i++){
+                            j[i].style.display = "none";
+                        }
+                        myindex++;
+                        if(myindex > j.length) {
+                            myindex = 1;
+                        }
+                        j[myindex-1].style.display = "block";
+                        setTimeout(changePic, 4000);
+                    }
+                </script>
             </div>
         </section>
         <section>
