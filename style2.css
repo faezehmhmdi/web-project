@@ -277,6 +277,11 @@
     padding: 4px;
 }
 
+#nav-card a{
+    color: #6e7794;
+}
+
+
 /* div for each doctor */
 .each-doc, .doc-part{
     flex-wrap: wrap;
@@ -433,6 +438,23 @@
     fill: #fa5a2c;
     cursor: pointer;
 }
+
+#week-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+}
+
+#week-list li{
+    text-align: center;
+    padding: 3%;
+}
+
+#week-list li:nth-child(odd){
+    background-color: rgb(237, 237, 237);
+}
+
 
 /* score box part*/
 .score-box{
