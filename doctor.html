@@ -19,7 +19,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        
+        <script src="./javascript/script2.js" defer></script>
 
         
         <!-- font awesome -->
@@ -233,7 +234,7 @@
             </div>
             <div class="enter-section flex-display">
                 <div>
-                    <a href="./login.html">
+                    <a id="login-link">
                          ورود
                         <i class="fa fa-sign-in-alt"></i>
                     </a>
@@ -243,7 +244,7 @@
         </header>
         
         <!--Navbar -->
-        <div class="container full-width">
+        <div class="container full-width" id="doc-nav">
             <div class="row flex-display full-width nav-container">
                 <nav>
                     <ol class="flex-display">
@@ -255,18 +256,19 @@
                         </li>
                         <li>
                             <a href="./specialist-list.html" style="color: #1780df;">
-                                فوق تخصص گوارش، کبد و آندوسکوپی
+                                <span id="name-of-spec-nav"></span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
                             </a>
                         </li>
                         <li>
-                            <span>
-                                آقای دکتر جواد رستگار مقدم
+                            <span id="name-of-doc-nav">
+                                
                             </span>
                         </li>
                     </ol>
                 </nav>
             </div>
+            
         </div>
         
         <div class="row w-100 full-width flex-display" id="main-content">
@@ -279,34 +281,33 @@
                             <svg data-v-58d4bfc9="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hover-p text-white  feather feather-share-2"><circle data-v-58d4bfc9="" cx="18" cy="5" r="3"></circle><circle data-v-58d4bfc9="" cx="6" cy="12" r="3"></circle><circle data-v-58d4bfc9="" cx="18" cy="19" r="3"></circle><line data-v-58d4bfc9="" x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line data-v-58d4bfc9="" x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
                         </div>
                         <div>
-                            <img style="width: 75px; height: 75px; border-radius: 50%;" src="./asset/images/dr4.jpg">
+                            <img style="width: 75px; height: 75px; border-radius: 50%;" id="avatar-of-doc">
                         </div>
                         <div>
                             <svg data-v-390d7861="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bookmark__heart--hover feather feather-heart text-white"><path data-v-390d7861="" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                         </div>
                     </div>
                     <div class="full-width" style="padding: 2%;text-align: center; margin-top: 3%; color: #fff;">
-                        <h5 style="font-weight: 700;">جواد رستگارمقدم</h5>
-                        <a style=" font-size: 12px;  color: #fff;" href="./specialist-list.html">
-                            فوق تخصص گوارش، کبد و آندوسکوپی
+                        <h5 style="font-weight: 700;" id="name-of-doc-in-card"></h5>
+                        <a style=" font-size: 12px;  color: #fff;" href="./specialist-list.html" id="spec-in-card">
                         </a>
-                        <p style="margin-top: 2%;"> شماره نظام پزشکی : 62005</p>
+                        <p style="margin-top: 2%;" id="nezam-number"> شماره نظام پزشکی : 62005</p>
                     </div>
                     <div class=" flex-display" style="background-color: #fff; border-radius: 10px; margin-left: 5%; margin-right: 5%; color: #6e7794; text-align: center;">
                         <div>
                             <svg data-v-543f147a="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="m-1 w-100 feather feather-book"><path data-v-543f147a="" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path data-v-543f147a="" d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                             <p>تجربه</p>
-                            <p>39 سال</p>
+                            <p id="exper"></p>
                         </div>
                         <div>
                             <svg data-v-543f147a="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="m-1 w-100 feather feather-clock"><circle data-v-543f147a="" cx="12" cy="12" r="10"></circle><polyline data-v-543f147a="" points="12 6 12 12 16 14"></polyline></svg>
                             <p>اولین نوبت آزاد</p>
-                            <p>30 آذر</p>
+                            <p id="free-date"></p>
                         </div>
                         <div>
                             <svg data-v-543f147a="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="m-1 w-100 feather feather-credit-card"><rect data-v-543f147a="" x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line data-v-543f147a="" x1="1" y1="10" x2="23" y2="10"></line></svg>
                             <p>پرداخت آنلاین</p>
-                            <p>دارد</p>
+                            <p id="online-pay"></p>
                         </div>
                     </div>
                 </div>
@@ -388,7 +389,7 @@
                 </div>
                 <div class="row w-100 doc-part">
                     <div class="score-box">
-                        <h1 style="font-weight: 700;">4.5</h1>
+                        <h1 style="font-weight: 700;" id="rate"></h1>
                         <div style="font-size: 10px;">
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
@@ -396,14 +397,13 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
-                        <p style="font-size: 12px; color: #6e7794; margin-top: 10%;">از 35 نظر</p>
+                        <p style="font-size: 12px; color: #6e7794; margin-top: 10%;" id="comments-num"></p>
                     </div>
                     <div style="color: #6e7794; width: 80%; margin-right: 5%; padding-top: 3%;">
                         <h6><svg data-v-2cb5db4b="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path data-v-2cb5db4b="" d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                            نظر حدیقه
+                            <span id="commenter"></span>
                         </h6>
-                        <p>
-                        با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم .
+                        <p id="comment-text">
                     </p>
                     </div>
                 </div>
@@ -433,37 +433,119 @@
                                 </a>
                                 <div class="col-8" style="color:#3b4157;">
                                     <h5 style="font-size: 16px; font-weight: 700;">آدرس مطب 1 :</h5>
-                                    <p>
-                                        خیابان پاسداران، ابتدای بوستان نهم، ساختمان مهر، پلاک 133، طبقه 1، واحد3
+                                    <p id="address">
                                     </p>
                                     <span class="flex-display">
                                         <p style="font-weight: 700;">
                                             تلفن گویا : 
-                                            <span class="phone">02162743344</span>
-                                        </p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row full-width" style="margin-bottom: 1%;">
-                                <a class="col-4">
-                                    <img style="width: 100%; border: 0 solid; border-radius: 10px;" src="./asset/images/addr2.png">
-                                </a>
-                                <div class="col-8" style="color:#3b4157;">
-                                    <h5 style="font-size: 16px; font-weight: 700;">آدرس مطب 2 :</h5>
-                                    <p>
-                                        خیابان پاسداران، ابتدای بوستان نهم، ساختمان مهر، پلاک 133، طبقه 1، واحد3
-                                    </p>
-                                    <span class="flex-display">
-                                        <p style="font-weight: 700;">
-                                            تلفن گویا : 
-                                            <span class="phone">02162743344</span>
+                                            <span class="phone" id="phonenumber"></span>
                                         </p>
                                     </span>
                                 </div>
                             </div>
                         </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row full-width flex-display" style="margin-bottom: 1%;" id="week-container">
+                            <h5 style="font-size: 16px; font-weight: 700;"> مطب </h5>
+                            <ul id="week-list"></ul>
+                        </div>
                     </div>
+                        
+                </div>
+                </div>
+                
+                <div class="row w-100 doc-part flex-display" style="padding-top: 0; padding-right: 0; padding-left: 0;">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pictures-tab" data-toggle="tab" href="#pictures" role="tab" aria-controls="pictures" aria-selected="true">
+                                
+                                گالری تصاویر
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active flex-display" id="pictures" role="tabpanel" aria-labelledby="pictures-tab">
+                                <img class="pic-gall" onclick="openModal();currentSlide(1)"style="width: 20%; height: 200px; padding: 1%; cursor: pointer;" src="./asset/images/ax-matab1.jpg">
+                                <img class="pic-gall" onclick="openModal();currentSlide(2)" style="width: 20%; height: 200px; padding: 1%; cursor: pointer;" src="./asset/images/ax-matab3.jpg">
+                                <img class="pic-gall" onclick="openModal();currentSlide(3)" style="width: 20%; height: 200px; padding: 1%; cursor: pointer;" src="./asset/images/ax-matab4.jpg">
+                    </div>
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
+
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="./asset/images/ax-matab1.jpg" style="width:100%; height: 400px;">
+                        </div>
+
+
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="./asset/images/ax-matab3.jpg" style="width:100%; height: 400px;">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="./asset/images/ax-matab4.jpg" style="width:100%; height: 400px;">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        
+                      </div>
+                    </div>
+                    <script>
+                        // Open the Modal
+                        function openModal() {
+                          document.getElementById("myModal").style.display = "block";
+                        }
+
+                        // Close the Modal
+                        function closeModal() {
+                          document.getElementById("myModal").style.display = "none";
+                        }
+
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        // Next/previous controls
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("demo");
+                          var captionText = document.getElementById("caption");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                          captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+                    </script>
+                </div>
                 </div>
                 
                 <!-- comments part -->
@@ -916,4 +998,12 @@
             </span>
         </div>
     </body>
+    
+    <script>
+        let loginLink = document.getElementById("login-link");
+        loginLink.addEventListener('click', function(){
+            loginLink.setAttribute('href', './login.html');
+        });
+
+    </script>
 </html>
